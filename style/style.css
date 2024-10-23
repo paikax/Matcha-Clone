@@ -1,5 +1,218 @@
-*{
-    margin: 0;
-    padding: 0;
+
+/*file css part 3 va 4 */
+@font-face { 
+    font-family: 'Millik';
+    src: url('../font/millikdemoversion.otf') ;
+  }
+@font-face{
+    font-family:'Archia';
+    src: url('../font/Archia-Regular.otf') 
+}
+
+* {
     box-sizing: border-box;
 }
+body {
+    color: #333;
+    background-color: #fff;
+    min-height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+.section.introduct {
+    border-bottom-color: #0d4a12;
+    background-color: #f5f5b4;
+}
+.section {
+    z-index: 5;
+    grid-row-gap: 50px;
+    border-bottom: 1px solid #000;
+    border-right: 1px #000;
+    flex-direction: column;
+    padding: 7vw 5vw;
+    display: flex;
+    position: relative;
+}
+.content-wrapper-medium {
+    z-index: 20;
+    perspective: 1000px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    position: relative;
+}
+.wrapper-max {
+    max-width: 650px;
+}
+.heading-2 {
+    color:#0d4a12;
+    letter-spacing: -1px;
+    text-transform: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Millik, sans-serif;
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 46px;
+}
+.paragraph-20 {
+    color: #0d4a12;
+    font-family: 'Archia', sans-serif;
+    font-weight:500;
+    letter-spacing: -.5px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+
+.intro-features-wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 0;
+    display: flex;
+}
+
+/* tao columm va rows cho 4 icon */
+.feature-grid {
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.w-layout-grid {
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+    grid-auto-columns: 1fr;
+    display: grid;
+}
+.intro-feature {
+    grid-column-gap: 16px;
+    grid-row-gap: 20px;
+    text-align: center;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    grid-auto-columns: 1fr;
+    justify-items: center;
+    display: grid;
+}
+.image-feature-icon {
+    width: 68%;
+    height: 68%;
+}
+.circle {
+    border: 1px solid #0d4a12;
+    background-color: #fcfccf;
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+    height: 125px;
+    display: flex;
+}
+
+/* label cua icon */
+.label-16 {
+    color: #0d4a12;
+    text-transform: uppercase;
+    order: 0;
+    align-self: auto;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+/* cai nay dung de lam gi thi minh cung khong biet chac cung quan trong :P*/
+.vibe-check-wrapper {
+    z-index: 50;
+    perspective: 1000px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    position: absolute;
+    inset: auto auto 0% 0%;
+}
+
+/* day la css cua part 4 */
+.summerClub{
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    border-bottom: 1px solid #0d4a12;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+}
+.section.sr-club {
+    background-color: #ffeb69;
+    background-image: url('https://cdn.prod.website-files.com/60cbcc62ce7342381afd2103/64b3c73b72992b5f5c8a08e3_Club%20Pattern.svg');
+    background-position: 0 0;
+    background-size: 210px 200px;
+    border-bottom-style: none;
+    height: 50vw;
+    min-height: 600px;
+    padding-top: 7vw;
+    padding-bottom: 7vw;
+}
+.wrapper-split-screen-content {
+    grid-row-gap: 60px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    display: flex;
+}
+.heading-1 {
+    color:#0d4a12;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Millik, sans-serif;
+    font-size: 60px;
+    line-height: 60px;
+}
+.paragraph-18 {
+    color:#0d4a12;
+    letter-spacing: -.4px;
+    font-family: Archia, sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+}
+.sr-club-button-placeholder {
+    color: #685f24;
+    background-color: #d8c54f;
+    border: 1px dashed #8d8133;
+    border-radius: 30px;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    display: flex;
+}
+.gif {
+    border-left: 1px solid #0d4a12;
+}
+.w-background-video {
+    color: #fff;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+.w-background-video>video {
+    object-fit: cover;
+    background-position: 50%;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    inset: -100%;
+}
+/*   <------------ ket thuc cua style part 3 va 4 */
+
