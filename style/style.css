@@ -3,3 +3,100 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Apply the Archia font to the whole application */
+body {
+    font-family: 'Archia', sans-serif;
+}
+
+
+/* Begin Header */
+/* General styling for the header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 30.72px;
+    line-height: 20px;
+    background-color: rgba(255, 255, 255, 0); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    z-index: 10;
+}
+
+/* Styling the left group of header items */
+#header_group_items_left {
+    display: flex;
+    align-items: center;
+}
+
+/* Styling each individual item in the left group */
+/* Styling for the header items */
+/* Base styling for the header items */
+.header_group_items_left_dropdown-toggle,
+.header_group_items_left_cart,
+.header_group_items_left_language-toggle {
+    color: #222;
+    margin-right: 20px;
+    margin-left: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Default subtle shadow behind the items */
+    border-radius: 50%; /* Circular shape */
+}
+
+/* Hover effect with a stronger circular shadow */
+.header_group_items_left_dropdown-toggle:hover,
+.header_group_items_left_cart:hover,
+.header_group_items_left_language-toggle:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.15); /* Stronger shadow behind and around the item */
+    border-radius: 50%; 
+    
+    /* Ensures the shadow and the item are circular */
+}
+
+
+
+/* Specific styles for the icons */
+.hamburger-menu {
+    width: 30px;
+    height: auto;
+}
+
+.cart-icon {
+    width: 28px;
+    height: auto;
+}
+
+/* Styling the right group of header items */
+.header_group_items_right-button {
+    padding: 20px 40px;
+    background-color: #0d4a12; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: #c4fe34;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    transform: translateY(0);
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for the right button */
+.header_group_items_right-button:hover {
+    transform: translateY(-4px); 
+    transform: translateY(-3px); 
+}   
+
+.header_group_items_right-button:active {
+    box-shadow: 0 3px 10px #0f5615;/* Reduced shadow when pressed */
+    transform: translateY(2px); /* Pressing down */
+}
+
+
+
+/* End header */
