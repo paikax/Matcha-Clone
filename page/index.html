@@ -1,162 +1,249 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Matcha</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archia&display=swap">
-        <link rel="stylesheet" href="../style/style.css">
-    </head>
-    <body>
-        <!-- Dinh Phong -->
-        <header class="header">
-            <div id="header_group_items_left">
-                <div class="header_group_items_left_dropdown">
-                    <div class="header_group_items_left_dropdown-toggle">
-                        <img src="https://cdn.prod.website-files.com/60cbcc62ce7342381afd2103/6186f850ede0466f4a6c4d72_Hamburger%20menu.svg" loading="eager" alt="" class="hamburger-menu">
-                    </div>
-                </div>
-                <div class="header_group_items_left_cart">
-                    <img src="https://cdn.prod.website-files.com/60cbcc62ce7342381afd2103/60f1922a19a6ae99f1dd8803_Cart.svg" loading="eager" width="28" alt="Cart icon" class="cart-icon">
-                </div>
-                <div class="header_group_items_left_language-toggle">
-                    <img src="https://cdn.prod.website-files.com/60cbcc62ce7342381afd2103/62c71dcca8a1e8fcf032038e_Globe%20main.svg" loading="lazy" alt="Sprachschalter " height="24">
-                </div>
-            </div>
-            <div class="header_group_items_right">
-                <button class="header_group_items_right-button">Matcha kaufen</button>
-            </div>
-        </header>
-        <!-- Thanh Phong -->
-        <div class="carousel"></div>
-        <div class="product">
+<html lang="en">
 
-        </div>
-        <!-- Hieu -->
-        <div class="introduct">
-            <div class="section introduct">
-                <div class="content-wrapper-medium">
-                    <div class="wrapper-max">
-                        <h2 class="heading-2">
-                            <span>We would like to introduce to you: Matcha from SummerRain</span>
-                        </h2>
-                        <p class="paragraph-20">Matcha from SummerRain combines an explosive blend of rich flavor, elegant aroma and pure umami. This makes every sip an experience. It's the energy boost you need in the morning. A refreshing feeling of light rain on a hot summer day. The foundation for hours of concentration and endless creativity. Our matcha helps you not to work longer, but to create more. It's nothing but good vibes delivered straight to your door.<br></p>
-                    </div>
-                    <div class="intro-features-wrapper">
-                        <div class="w-layout-grid feature-grid">
-                            <div class="intro-feature">
-                                <div class="circle">
-                                    <img src="https://cdn.prod.website-files.com/60cbcc62ce7342381afd2103/621248ef0ba94d407b648b75_Diamond%20final-min.png" 
-                                    loading="lazy" 
-                                    width="68" 
-                                    alt="SummerRain ceremonial grade" 
-                                    class="image-feature-icon">
-                                </div>
-                                <div class="label-16 home-icon-label">Ceremonial quality</div>
-                            </div>
-                            <div class="intro-feature">
-                                <div class="circle">
-                                    <img src="https://cdn.prod.website-files.com/60cbcc62ce7342381afd2103/621248ef6b4ab8773b36bba3_Sugar%20final-min.png" 
-                                    loading="lazy"  
-                                    alt="SummerRain No sugar" 
-                                    class="image-feature-icon">
-                                </div>
-                                    <div class="label-16 home-icon-label">No added sugar</div>
-                                </div>
-                                <div  class="intro-feature">
-                                    <div class="circle">
-                                        <img src="https://cdn.prod.website-files.com/60cbcc62ce7342381afd2103/621248eff7696d65b3e47b4a_Japan%20final-min.png" 
-                                        loading="lazy" 
-                                        alt="SummerRain sunrise in Japan" 
-                                        class="image-feature-icon">
-                                    </div>
-                                    <div class="label-16 home-icon-label">Produced in Japan</div>
-                                </div>
-                                <div  class="intro-feature">
-                                    <div class="circle"><img src="https://cdn.prod.website-files.com/60cbcc62ce7342381afd2103/621248efdbf70d566e6c265d_Lecker%20final-min.png" 
-                                        loading="lazy"  
-                                        alt="SummerRain delicious blend" 
-                                        class="image-feature-icon">
-                                    </div>
-                                    <div class="label-16 home-icon-label">Delicious blend</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="vibe-check-wrapper"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matcha</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archia&display=swap">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+    <!-- Dinh Phong -->
+    <header class="header">
+        <div id="header_group_items_left">
+            <div class="header_group_items_left_dropdown">
+                <div class="header_group_items_left_dropdown-toggle">
+                    <img src="https://cdn.prod.website-files.com/60cbcc62ce7342381afd2103/6186f850ede0466f4a6c4d72_Hamburger%20menu.svg"
+                        loading="eager" alt="Dropdown" class="hamburger-menu" id="dropdownToggle">
                 </div>
-                <section class="summerClub">
-                    <div  class="section sr-club">
-                        <div class="wrapper-split-screen-content">
-                            <div>
-                                <h2 class="heading-1">Summer Club</h2>
-                                <p class="paragraph-18">Summer Club membership is a brand new program from SummerRain that includes a matcha package each month and exclusive access to our recipe book and new clothing items.</p>
-                            </div>
-                            <div class="sr-club-button-placeholder"><p class="paragraph-18 no-padding">Available soon</p></div>
-                        </div>
-                    </div>
-                    <div class="gif">
-                        <div style="width: 100%; height: 100%;" class="w-background-video w-background-video-atom">
-                            <video playsinline="" loop="" muted="" autoplay="" data-wf-ignore="true" data-object-fit="cover">
-                                <source src="https://res.cloudinary.com/dx0sk8iuq/video/upload/q_auto/v1703098102/SR_swag_compressed_ylvz6s.mp4" data-wf-ignore="true">
-                            </video>
-                        </div>
-                    </div>
-            </section>
+            </div>
+            <div class="header_group_items_left_cart">
+                <img src="https://cdn.prod.website-files.com/60cbcc62ce7342381afd2103/60f1922a19a6ae99f1dd8803_Cart.svg"
+                    loading="eager" width="28" alt="Cart icon" class="cart-icon">
+            </div>
+            <div class="header_group_items_left_language-toggle">
+                <img src="https://cdn.prod.website-files.com/60cbcc62ce7342381afd2103/62c71dcca8a1e8fcf032038e_Globe%20main.svg"
+                    loading="lazy" alt="Language switch" height="24">
+            </div>
+            <div class="header_group_items_left_dropdown-content">
+                <div class="header_group_items_left_dropdown-item">
+                    <img src="https://cdn.prod.website-files.com/60cbcc62ce7342381afd2103/60f1922a19a6ae99f1dd8803_Cart.svg"
+                        loading="eager" width="28" alt="Cart icon" class="cart-icon">
+                </div>
+                <div class="header_group_items_left_dropdown-item">
+                    <img src="https://cdn.prod.website-files.com/60cbcc62ce7342381afd2103/62c71dcca8a1e8fcf032038e_Globe%20main.svg"
+                        loading="lazy" alt="Language switch" height="24">
+                </div>
+            </div>
         </div>
-        <!-- Hoang Anh -->
+        <div class="header_group_items_right">
+            <button class="header_group_items_right-button">Matcha kaufen</button>
+        </div>
+    </header>
+
+
+
+    <!-- Thanh Phong -->
+    <div class="carousel"></div>
+    <div class="product">
+
+    </div>
+    <!-- Hieu -->
+    <div class="introduct">
+        <div class="section introduct">
+            <div class="content-wrapper-medium">
+                <div class="wrapper-max">
+                    <h2 class="heading-2">
+                        <span>We would like to introduce to you: Matcha from SummerRain</span>
+                    </h2>
+                    <p class="paragraph-20">Matcha from SummerRain combines an explosive blend of rich flavor, elegant
+                        aroma and pure umami. This makes every sip an experience. It's the energy boost you need in the
+                        morning. A refreshing feeling of light rain on a hot summer day. The foundation for hours of
+                        concentration and endless creativity. Our matcha helps you not to work longer, but to create
+                        more. It's nothing but good vibes delivered straight to your door.<br></p>
+                </div>
+                <div class="intro-features-wrapper">
+                    <div class="w-layout-grid feature-grid">
+                        <div class="intro-feature">
+                            <div class="circle">
+                                <img src="https://cdn.prod.website-files.com/60cbcc62ce7342381afd2103/621248ef0ba94d407b648b75_Diamond%20final-min.png"
+                                    loading="lazy" width="68" alt="SummerRain ceremonial grade"
+                                    class="image-feature-icon">
+                            </div>
+                            <div class="label-16 home-icon-label">Ceremonial quality</div>
+                        </div>
+                        <div class="intro-feature">
+                            <div class="circle">
+                                <img src="https://cdn.prod.website-files.com/60cbcc62ce7342381afd2103/621248ef6b4ab8773b36bba3_Sugar%20final-min.png"
+                                    loading="lazy" alt="SummerRain No sugar" class="image-feature-icon">
+                            </div>
+                            <div class="label-16 home-icon-label">No added sugar</div>
+                        </div>
+                        <div class="intro-feature">
+                            <div class="circle">
+                                <img src="https://cdn.prod.website-files.com/60cbcc62ce7342381afd2103/621248eff7696d65b3e47b4a_Japan%20final-min.png"
+                                    loading="lazy" alt="SummerRain sunrise in Japan" class="image-feature-icon">
+                            </div>
+                            <div class="label-16 home-icon-label">Produced in Japan</div>
+                        </div>
+                        <div class="intro-feature">
+                            <div class="circle"><img
+                                    src="https://cdn.prod.website-files.com/60cbcc62ce7342381afd2103/621248efdbf70d566e6c265d_Lecker%20final-min.png"
+                                    loading="lazy" alt="SummerRain delicious blend" class="image-feature-icon">
+                            </div>
+                            <div class="label-16 home-icon-label">Delicious blend</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vibe-check-wrapper"></div>
+        </div>
+        <section class="summerClub">
+            <div class="section sr-club">
+                <div class="wrapper-split-screen-content">
+                    <div>
+                        <h2 class="heading-1">Summer Club</h2>
+                        <p class="paragraph-18">Summer Club membership is a brand new program from SummerRain that
+                            includes a matcha package each month and exclusive access to our recipe book and new
+                            clothing items.</p>
+                    </div>
+                    <div class="sr-club-button-placeholder">
+                        <p class="paragraph-18 no-padding">Available soon</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gif">
+                <div style="width: 100%; height: 100%;" class="w-background-video w-background-video-atom">
+                    <video playsinline="" loop="" muted="" autoplay="" data-wf-ignore="true" data-object-fit="cover">
+                        <source
+                            src="https://res.cloudinary.com/dx0sk8iuq/video/upload/q_auto/v1703098102/SR_swag_compressed_ylvz6s.mp4"
+                            data-wf-ignore="true">
+                    </video>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Hoang Anh -->
     <div class="recipeBook">
         <div class="section no-overflow">
             <div class="splide slider1" id="splide01" style="visibility: visible;">
                 <div class="splide__arrows">
                     <div class="div-block-49">
                         <h2 class="heading-2">Recipe Book</h2>
-                        <p class="paragraph-19">Entfalten Sie das volle Potenzial von Matcha mit Rezepten, die vom SummerRain-Team entwickelt und kuratiert wurden und von Lattes und Smoothies bis hin zu Kuchen und Cocktails reichen.</p>
+                        <p class="paragraph-19">Entfalten Sie das volle Potenzial von Matcha mit Rezepten, die vom
+                            SummerRain-Team entwickelt und kuratiert wurden und von Lattes und Smoothies bis hin zu
+                            Kuchen und Cocktails reichen.</p>
                     </div>
                 </div>
                 <div class="splide__track" id="splide01-track">
                     <div role="list" class="splide__list" id="splide01-list">
-                        <div role="listitem" class="splide__slide" id="splide01-slide01" aria-hidden="false" tabindex="0" style="margin-right: 28px; width: 359px;">
-                            <a href="#" class="recipe-card">
-                                <div class="product-large-wrapper">
-                                    <img src="https://cdn.prod.website-files.com/60e8631dfa279c61a190e2f0/64b3cb2377901d548ff95e13_Lemonade.webp" loading="lazy" alt="Matcha Lemonade">
-                                </div>
-                                <div class="card-text-section">
-                                    <h3 class="heading-3">Matcha Lemonade</h3>
-                                    <div class="paragraph-16">Erfrischend wie eine kalte Dusche am Morgen</div>
-                                </div>
-                            </a>
+                        <div role="listitem" class="splide__slide" id="splide01-slide01" aria-hidden="false"
+                            tabindex="0" style="margin-right: 28px; width: 359px;">
+                            <!-- <a href="#" class="recipe-card"> -->
+                            <div class="product-large-wrapper">
+                                <img src="https://cdn.prod.website-files.com/60e8631dfa279c61a190e2f0/64b3cb2377901d548ff95e13_Lemonade.webp"
+                                    loading="lazy" alt="Matcha Lemonade">
+                            </div>
+                            <div class="card-text-section">
+                                <h3 class="heading-3">Matcha Lemonade</h3>
+                                <div class="paragraph-16">Erfrischend wie eine kalte Dusche am Morgen</div>
+                            </div>
+                            <!-- </a> -->
                         </div>
-                        <div role="listitem" class="splide__slide" id="splide01-slide02" aria-hidden="false" tabindex="0" style="margin-right: 28px; width: 359px;">
-                            <a href="#" class="recipe-card">
-                                <div class="product-large-wrapper">
-                                    <img src="https://cdn.prod.website-files.com/60e8631dfa279c61a190e2f0/64b3cb3261b7437799e07990_Matcha%20Latte.webp" loading="lazy" alt="Caramel Matcha">
-                                </div>
-                                <div class="card-text-section">
-                                    <h3 class="heading-3">Matcha Latte</h3>
-                                    <div class="paragraph-16">Die Combo, die die Welt erobert hat</div>
-                                </div>
-                            </a>
+                        <div role="listitem" class="splide__slide" id="splide01-slide02" aria-hidden="false"
+                            tabindex="0" style="margin-right: 28px; width: 359px;">
+                            <!-- <a href="#" class="recipe-card"> -->
+                            <div class="product-large-wrapper">
+                                <img src="https://cdn.prod.website-files.com/60e8631dfa279c61a190e2f0/64b3cb3261b7437799e07990_Matcha%20Latte.webp"
+                                    loading="lazy" alt="Caramel Matcha">
+                            </div>
+                            <div class="card-text-section">
+                                <h3 class="heading-3">Matcha Latte</h3>
+                                <div class="paragraph-16">Die Combo, die die Welt erobert hat</div>
+                            </div>
+                            <!-- </a> -->
                         </div>
-                        <div role="listitem" class="splide__slide" id="splide01-slide03" aria-hidden="true" tabindex="-1" style="margin-right: 28px; width: 359px;">
+                        <div role="listitem" class="splide__slide" id="splide01-slide03" aria-hidden="true"
+                            tabindex="-1" style="margin-right: 28px; width: 359px;">
                             <a href="#" class="recipe-card">
                                 <div class="product-large-wrapper">
-                                    <img src="https://cdn.prod.website-files.com/60e8631dfa279c61a190e2f0/64b3cb3ee9db6e47d5c1e75c_Vanilla%20Latte.webp" loading="lazy" alt="Coconut Pineapple Matcha smoothie">
+                                    <img src="https://cdn.prod.website-files.com/60e8631dfa279c61a190e2f0/64b3cb3ee9db6e47d5c1e75c_Vanilla%20Latte.webp"
+                                        loading="lazy" alt="Coconut Pineapple Matcha smoothie">
                                 </div>
                                 <div class="card-text-section">
                                     <h3 class="heading-3">Vanilla Latte</h3>
-                                    <div class="paragraph-16">Ein weicher und sanfter Geschmack von Vanillemilch und Matcha</div>
+                                    <div class="paragraph-16">Ein weicher und sanfter Geschmack von Vanillemilch und
+                                        Matcha</div>
                                 </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="summerClub"></div>
-        <!-- Nguyen -->
-        <div class="recipeBook"></div>
-        <!-- Phuoc -->
-        <div class="community"></div>
-        <!-- Nguyen -->
-        <div class="magazine"></div>
-        <div class="blog"></div>
-        <!-- Dinh Phong -->
-        <footer></footer>
-    </body>
+    </div>
+    <div class="summerClub"></div>
+    <!-- Phuoc -->
+    <div class="community"></div>
+    <!-- Nguyen -->
+    <div class="magazine"></div>
+    <div class="blog"></div>
+
+    <!-- Footer -->
+    <footer class="footer-content-container">
+        <div class="footer-content-container_content">
+            <div class="footer-content-container_content-item-1">
+                <a href="#" class="footer-content-container_content-item-1-link-1">Magazine</a>
+                <a href="#" class="footer-content-container_content-item-1-link-2">Versand &amp;
+                    Rückgabe</a>
+                <a href="#" class="footer-content-container_content-item-1-link-3">Mit uns chatten</a>
+                <a href="#" class="footer-content-container_content-item-1-link-4">Presse</a>
+                <a href="https://www.instagram.com/getsummerrain/" target="_blank"
+                    class="footer-content-container_content-item-1-link-5">Instagram</a>
+            </div>
+            <div class="footer-content-container_content-item-2">
+                <a href="#" class="footer-content-container_content-item-2-link-1">Refill pack</a>
+                <a href="#" class="footer-content-container_content-item-2-link-2">Summer Club</a>
+                <a href="#" class="footer-content-container_content-item-2-link-3">Matcha for cafes</a>
+                <a href="#" class="footer-content-container_content-item-2-link-4">Matcha for bars</a>
+            </div>
+            <div class="footer-content-container_content-item-3">
+                <a href="#" class="footer-content-container_content-item-3-link-1">AGB</a>
+                <a href="#" class="footer-content-container_content-item-3-link-2">Impressum</a>
+                <a href="#" class="footer-content-container_content-item-3-link-3">Datenschutz</a>
+                <a href="#" class="footer-content-container_content-item-3-link-4">© SummerRain - 2024</a>
+            </div>
+        </div>
+        <div class="footer-content-container_content-logo">
+            <img src="https://cdn.prod.website-files.com/60cbcc62ce7342381afd2103/64bfe6046b52bc68eeaa6f5a_SR%20logo%20lime.svg"
+                loading="lazy" alt="" height="46">
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const dropdownToggle = document.getElementById("dropdownToggle");
+            const dropdownContent = document.querySelector(".header_group_items_left_dropdown-content");
+
+            // Toggle dropdown on click
+            dropdownToggle.addEventListener("click", function (event) {
+                event.stopPropagation(); // Prevent click from bubbling up
+                dropdownContent.classList.toggle("active");
+            });
+
+            // Close the dropdown if clicked outside
+            document.addEventListener("click", function (event) {
+                if (!dropdownToggle.contains(event.target) && !dropdownContent.contains(event.target)) {
+                    dropdownContent.classList.remove("active");
+                }
+            });
+        });
+    </script>
+
+
+</body>
+
 </html>
