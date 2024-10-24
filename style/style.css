@@ -216,3 +216,71 @@ body {
 }
 /*   <------------ ket thuc cua style part 3 va 4 */
 
+@media (max-width: 768px) {
+    .section.introduct {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    .section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .heading-2 {
+        line-height: 44px;
+        font-size: 30px;
+    }
+    .p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .intro-features-wrapper {
+        align-items: center;
+        margin-bottom: 35px;
+        display: block;
+    }
+    .feature-grid {
+        grid-column-gap: 10vw;
+        grid-row-gap: 5vw;
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr 1fr;
+    }
+    .intro-feature {
+        justify-self: center;
+        width: 160px;
+    }
+    .circle {
+        width: 100px;
+        height: 100px;
+    }
+    .image-feature-icon {
+        width: 58%;
+        height: 58%;
+    }
+    .selection {
+        grid-template-rows: auto auto;
+        grid-template-columns: 1fr;
+    }
+    .section.sr-club {
+        border-top: 1px solid #0d4a12;
+        height: auto;
+        min-height: auto;
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+    .wrapper-split-screen-content {
+        grid-row-gap: 61px;
+    }
+    .heading-1 {
+        margin-top: 10px;
+        font-size: 36px;
+        line-height: 36px;
+    }
+    .paragraph-18 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .gif {
+        height: 60vw;
+    }
+    
+}
