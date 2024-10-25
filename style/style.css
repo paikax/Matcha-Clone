@@ -279,8 +279,13 @@ body {
         font-size: 14px;
         line-height: 18px;
     }
-    .gif {
-        height: 60vw;
+    .summerClub{
+        display:flex;
+        flex-wrap: wrap-reverse;
     }
-    
+    .gif {
+        flex:auto;
+        height:367px;
+        width: 367px;
+    }
 }
