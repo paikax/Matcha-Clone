@@ -26,25 +26,36 @@ body {
     font-size: 14px;
     line-height: 20px;
 }
-/* begin header */
-header{
+/* Header */
+header {
     position: sticky;
     top: 0;
     left: 0;
     z-index: 10;
 }
-.navbar{
+
+/* Navbar initial state */
+.navbar {
     padding: 20px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: transparent;
+    transition: background-color 0.3s ease, border-bottom 0.3s ease;
 }
-.navbar_left{
+
+/* Navbar scrolled state */
+.navbar.scrolled {
+    background-color: #fcfcd2; /* Desired background color */
+    border-bottom: 1.5px solid black; /* Border when scrolled */
+}
+
+/* Navbar buttons */
+.navbar_left {
     display: flex;
 }
 
-.btn_item{
+.btn_item {
     position: relative;
     width: 50px;
     height: 50px;
@@ -52,22 +63,37 @@ header{
     border: none;
     background-color: transparent;
 }
-.btn_item:hover{
+
+.btn_item:hover {
     background-color: #9500001a;
     transform: scale(1.05);
     transition: all 0.5s;
 }
-.btn_item i{
+
+.btn_item i {
     font-size: 20px;
 }
-.navbar_right .navbar_btn{
-    padding: 15px 25px;
+
+.navbar_right .navbar_btn {
+    padding: 20px 40px;
     border-radius: 20px;
     background-color: #0d4a12;
     color: #c4fe34;
+    font-size: 16px;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
-.dropdown_content{
+.navbar_right .navbar_btn:hover{
+    box-shadow: 0px 5px #13651a;
+    transform: translateY(-5px);
+}
+
+/* Other existing styles */
+.content {
+    padding: 20px; /* Add some padding for better visibility */
+}
+
+.dropdown_content {
     display: none;
     position: absolute;
     top: 70px;
@@ -78,69 +104,165 @@ header{
     transition: all 0.5s;
     z-index: 10;
     background-color: white;
+    box-shadow: -3px 5px #d5d5d5;
 }
-.dropdown_item{
+
+.dropdown_item {
     display: flex;
     align-items: center;
     padding: 10px 15px;
     border-radius: 10px;
     margin: 5px 0;
 }
-.dropdown_item:hover{
+
+.dropdown_item:hover {
     background-color: #f1edeb;
 }
-.dropdown_item img{
+
+.dropdown_item img {
     width: 60px;
     height: 40px;
     border-radius: 10px;
     margin-right: 10px;
 }
-.dropdown_item1{
+
+.dropdown_item1 {
     border-top: solid 1px black;
     padding: 10px 0;
 }
-.dropdown_item1 ul{
+
+.dropdown_item1 ul {
     list-style: none;
 }
-.dropdown_item1 li{
+
+.dropdown_item1 li {
     width: 200px;
     padding: 10px 15px;
     border-radius: 10px;
 }
-.dropdown_item1 li:hover{
+
+.dropdown_item1 li:hover {
     background-color: #f1edeb;
 }
+
 #myDropdown2 {
     left: 140px;
 }
-#myDropdown2 img{
+
+#myDropdown2 img {
     width: 30px;
     height: 30px;
 }
+/* Wrapper for the Buy Matcha button */
+/* Wrapper for the Buy Matcha button */
+.buy-matcha-wrapper {
+    position: fixed;
+    bottom: 0; /* Align to the bottom of the viewport */
+    left: 0; /* Align to the left edge */
+    right: 0; /* Align to the right edge */
+    z-index: 10;
+    background-color: #fcfcd2; /* Background color */
+    border-radius: 0; /* Remove rounded corners for full width */
+    padding: 10px 0; /* Padding for aesthetics */
+    display: none; /* Initially hidden */
+}
 
-.navbar_right .navbar_btn {
-    padding: 15px 25px;
+.buy-matcha-btn {
+    margin-left: 15px;
+    margin-right: auto;
+    width: 95%;
+    padding: 20px 0;
     border-radius: 20px;
     background-color: #0d4a12;
     color: #c4fe34;
-    border: none; /* Ensure there is no border */
-    cursor: pointer; /* Change cursor to pointer for better UX */
-    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transitions */
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Raised effect on hover with sharper shadow */
-.navbar_right .navbar_btn:hover {
-    transform: translateY(-5px); /* Move the button up */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 1), 0 4px 8px rgba(0, 0, 0, 1); /* Add sharper shadow */
+.buy-matcha-btn:hover {
+    background-color: #c4fe34; /* Change color on hover */
+    color: #0d4a12; /* Change text color on hover */
 }
 
-
-
-
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar_right .navbar_btn {
+        display: none; /* Hide the main button on mobile */
+    }
+    .buy-matcha-wrapper {
+        display: block; /* Show the Buy Matcha button on mobile */
+    }
+}
 /* End header */
 
+
+/* Logo Container */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 9999; /* Ensures it stays on top of other elements */
+    transition: all 0.3s ease;
+}
+
+/* Start Logo */
+/* Logo Container */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 9999; /* Ensures it stays on top */
+    transition: all 0.3s ease;
+}
+
+/* Start Logo */
+/* Logo Container */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 9999; /* Ensures it stays on top */
+    transition: all 0.3s ease;
+}
+
+/* Start Logo */
+.big_logo {
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.big_logo h1 {
+    color: #0d4a12;
+    font-family: 'Millik', sans-serif;
+    font-size: 30px;  /* Shrink to smaller size */
+    margin-top: 20px;
+    transition: all 0.4s ease;
+}
+
+/* Shrinks and aligns logo when scrolled */
+.logo-container.scrolled .big_logo {
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+.logo-container.scrolled .big_logo h1 {
+    margin-top: 50px;
+    font-size: 100px; 
+}
+
+
+
+
+
+
 /* Part 3 and 4 */
-..section.introduct {
+.section.introduct {
     border-bottom-color: #0d4a12;
     background-color: #f5f5b4;
 }
@@ -1130,14 +1252,21 @@ header{
     justify-content: space-around;
     padding: 0 40px;
     padding-top: 70px;
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
 }
 
 .footer-content-container_content-item-1,
 .footer-content-container_content-item-2,
 .footer-content-container_content-item-3 {
-    flex: 1;
-    min-width: 200px;
+    /* flex: 1; */
+    /* min-width: 200px; */
     margin-bottom: 20px;
+    align-items: flex-start;
+
 }
 
 .footer-content-container_content a {
