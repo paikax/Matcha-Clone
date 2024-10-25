@@ -17,35 +17,61 @@
 
 <body>
     <!-- Dinh Phong -->
-    <header class="header">
-        <div id="header_group_items_left">
-            <div class="header_group_items_left_dropdown">
-                <div class="header_group_items_left_dropdown-toggle">
-                    <img src="https://cdn.prod.website-files.com/60cbcc62ce7342381afd2103/6186f850ede0466f4a6c4d72_Hamburger%20menu.svg"
-                        loading="eager" alt="Dropdown" class="hamburger-menu" id="dropdownToggle">
+    <header>
+        <div class="navbar">
+            <div class="navbar_left">
+                <div class="navbar_item">
+                    <button class="btn_item" onclick="myFunction1()">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="dropdown">
+                        <div class="dropdown_content" id="myDropdown1">
+                            <div class="dropdown_item">
+                                <img src="../image/64aff1b457e6fd36042e114c_Welcome pack.webp" alt="">
+                                <p>Welcome pack</p>
+                            </div>
+                            <div class="dropdown_item">
+                                <img src="../image/64aff19afff1e5350da561d8_Refill pack.webp" alt="">
+                                <p>Refill pack</p>
+                            </div>
+                            <div class="dropdown_item1">
+                                <ul>
+                                    <li>Recipes</li>
+                                    <li>Magazines</li>
+                                    <li>FAQ</li>
+                                    <li>the Magazine</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar_item navbar_item1">
+                    <button class="btn_item" >
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </div>
+                <div class="navbar_item navbar_item1">
+                    <button class="btn_item" onclick="myFunction2()">
+                        <i class="fa-solid fa-globe"></i>
+                    </button>
+                    <div class="dropdown">
+                        <div class="dropdown_content" id="myDropdown2">
+                            <div class="dropdown_item">
+                                <img src="../image/60d63e326b83808de2331d04_DE flag 1.png" alt="">
+                                <p>Deutsch</p>
+                            </div>
+                            <div class="dropdown_item">
+                                <img src="../image/620403fe2c050b3f15887fb8_EN flag-min.png" alt="">
+                                <p>English</p>
+                            </div>
+                          
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="header_group_items_left_cart">
-                <img src="https://cdn.prod.website-files.com/60cbcc62ce7342381afd2103/60f1922a19a6ae99f1dd8803_Cart.svg"
-                    loading="eager" width="28" alt="Cart icon" class="cart-icon">
+            <div class="navbar_right">
+                <button class="navbar_btn">Matcha kaufen</button>
             </div>
-            <div class="header_group_items_left_language-toggle">
-                <img src="https://cdn.prod.website-files.com/60cbcc62ce7342381afd2103/62c71dcca8a1e8fcf032038e_Globe%20main.svg"
-                    loading="lazy" alt="Language switch" height="24">
-            </div>
-            <div class="header_group_items_left_dropdown-content">
-                <div class="header_group_items_left_dropdown-item">
-                    <img src="https://cdn.prod.website-files.com/60cbcc62ce7342381afd2103/60f1922a19a6ae99f1dd8803_Cart.svg"
-                        loading="eager" width="28" alt="Cart icon" class="cart-icon">
-                </div>
-                <div class="header_group_items_left_dropdown-item">
-                    <img src="https://cdn.prod.website-files.com/60cbcc62ce7342381afd2103/62c71dcca8a1e8fcf032038e_Globe%20main.svg"
-                        loading="lazy" alt="Language switch" height="24">
-                </div>
-            </div>
-        </div>
-        <div class="header_group_items_right">
-            <button class="header_group_items_right-button">Matcha kaufen</button>
         </div>
     </header>
 
@@ -407,29 +433,10 @@
     </footer>
     <!-- End footer -->
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const dropdownToggle = document.getElementById("dropdownToggle");
-            const dropdownContent = document.querySelector(".header_group_items_left_dropdown-content");
-
-            // Toggle dropdown on click
-            dropdownToggle.addEventListener("click", function (event) {
-                event.stopPropagation(); // Prevent click from bubbling up
-                dropdownContent.classList.toggle("active");
-            });
-
-            // Close the dropdown if clicked outside
-            document.addEventListener("click", function (event) {
-                if (!dropdownToggle.contains(event.target) && !dropdownContent.contains(event.target)) {
-                    dropdownContent.classList.remove("active");
-                }
-            });
-        });
-    </script>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../js/Slide.js"></script>
-
+    <script src="../js/header.js"></script>
+    
 </body>
 
 </html>
