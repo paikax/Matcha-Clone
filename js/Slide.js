@@ -27,5 +27,17 @@ const swiper = new Swiper('.slider-wrapper', {
 });
 
 
+window.addEventListener('scroll', function() {
+  const productLogo = document.querySelector('.product-logo');
+  const stickyThreshold = productLogo.offsetTop; // Lấy vị trí của product-logo
+
+  if (window.pageYOffset > stickyThreshold) {
+      productLogo.classList.add('sticky');
+  } else {
+      productLogo.classList.remove('sticky');
+  }
+});
+
+
 
           

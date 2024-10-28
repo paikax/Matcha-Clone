@@ -19,23 +19,24 @@
 /* Apply the Archia font to the whole application */
 body {
     color: #333;
-    background-color: #fff;
+    background-color: #fcfccf;
     min-height: 100%;
-    margin: 0;
+    margin: 0;  
     font-family: Arial, sans-serif;
     font-size: 14px;
     line-height: 20px;
 }
 /* Header */
 header {
+    z-index: 1000;
     position: sticky;
     top: 0;
     left: 0;
-    z-index: 10;
 }
 
 /* Navbar initial state */
 .navbar {
+    top:0px;
     padding: 20px 30px;
     display: flex;
     justify-content: space-between;
@@ -154,7 +155,7 @@ header {
     height: 30px;
 }
 /* Wrapper for the Buy Matcha button */
-/* Wrapper for the Buy Matcha button */
+
 .buy-matcha-wrapper {
     position: fixed;
     bottom: 0; /* Align to the bottom of the viewport */
@@ -195,6 +196,24 @@ header {
         display: block; /* Show the Buy Matcha button on mobile */
     }
 }
+
+
+.cart_btn {
+    padding: 20px 10px; /* Adjust padding as needed */
+    border-radius: 20px;
+    background-color: #0d4a12;
+    color: #c4fe34;
+    font-size: 20px; /* Increase font size if needed */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.cart_btn:hover {
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    transform: translateY(-5px); /* Lift effect */
+}
+
+
+
 /* End header */
 
 
@@ -456,6 +475,7 @@ header {
     inset: -100%;
 }
 /*   <------------ ket thuc cua style part 3 va 4 */
+
 @media (max-width: 768px) {
     .section.introduct {
         padding-left: 5vw;
@@ -519,7 +539,15 @@ header {
         font-size: 14px;
         line-height: 18px;
     }
-    
+    .summerClub{
+        display:flex;
+        flex-wrap: wrap-reverse;
+    }
+    .gif {
+        flex:auto;
+        height:367px;
+        width: 367px;
+    }
 }
 
 
@@ -1362,4 +1390,188 @@ header {
 
 .show{
     display: block;
+}
+
+
+/* Thanh Phong Body head */
+/* Carousel Styling */
+.carousel {
+    background-image: url('../image/64c7f0f4923fcc17002a7d25_hero%20New.webp'); 
+    background-position: center;
+    background-size: cover;
+    border-bottom: 1px solid #0d4a12;
+    width: 100vw; 
+    height: 100vh; 
+}
+
+/* Product Styling */
+.product {
+    font-family: Archia, sans-serif;
+    color: #0d4a12;
+    background-color: #fcfccf; 
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Thay đổi sang block cho ảnh */
+}
+
+.product-logo {
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+    position: sticky;
+    top: -50px;
+    padding-top: 38.9px;
+}
+
+.product-logo img {
+    height: 14vh; 
+    aspect-ratio: auto 1486 / 218;
+    overflow: clip;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-logo.sticky img {
+    transform: scale(0.25);
+}
+
+.product-subtitle {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+/* Product Home */
+.product-home {
+    margin-top: 20px;
+    padding: 7vw 0; 
+    transition: 0.15s ease-in-out; 
+    border-bottom: 1px solid var(--sr-green); 
+}
+
+/* Product Home List */
+.product-home-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    padding: 0 29.17px;
+}
+
+.product-home-list-item {
+    width: 55%;
+    padding: 15px;
+    padding: 0 29.17px;
+    text-align: left;
+}
+
+/* Product Home List Item Card */
+.product-home-list-item-card {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.product-home-list-item-wrapper {
+    z-index: 20;
+    width: 100%;
+    position: relative;
+}
+
+/* Logo Container */
+.product-home-list-item-logo {
+    z-index: 20;
+    border: 1px solid #0d4a12; 
+    border-radius: 4vw; 
+    width: 100%; 
+    height: 46vw; 
+    position: relative;
+    transition: transform 0.15s;
+}
+
+/* Hình ảnh bên trong logo */
+.product-home-list-item-logo img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-radius: inherit; 
+}
+
+/* Layer nền phía sau logo */
+.product-home-list-item-logo-bottom-layer {
+    z-index: 10;
+    border: 1px solid #0d4a12; 
+    background-color: #a6b0cb; 
+    border-radius: 4vw; 
+    position: absolute;
+    inset: 0; 
+}
+
+/* Hiệu ứng hover cho logo */
+.product-home-list-item-logo:hover {
+    transform: translateY(-5px); 
+}
+
+.product-home-list-item-intro {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    margin-top: 35px; 
+    padding: 0 10px; 
+}
+
+/* Intro Text */
+.product-home-list-item-intro-text {
+    max-width: 500px; 
+    margin-right: 15px; 
+}
+
+.product-home-list-item-intro-text h2 {
+    margin: 10px 0 0 0; 
+    letter-spacing: -1px;
+    font-family: Millik, sans-serif;
+    font-size: 46px;
+    line-height: 46px;
+}
+
+.product-home-list-item-intro-text .p {
+    letter-spacing: -0.4px;
+    font-family: Archia, sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+/* Price Styling */
+.product-home-list-item-intro-price {
+    background-color: #0d4a12; 
+    color: #c4fe34; 
+    padding: 10px 15px;
+    border-radius: 26px;
+}
+
+/* Responsive */
+@media screen and (max-width: 991px) {
+    .product-home-list {
+        flex-direction: column; 
+    }
+
+    .product-home-list-item-card {
+        transform: scale(1.35); 
+        margin-bottom: 15px; 
+    }
+
+    .product-home-list-item-logo {
+        height: auto; 
+    }
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
 }
